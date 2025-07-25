@@ -1,9 +1,14 @@
-/// <reference types="vitest" />
+/// <reference types="vitest/config" />
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [dts({ include: ["lib"] })],
+  plugins: [
+    react(),
+    dts({ include: ["lib"] })
+  ],
   build: {
     lib: {
       entry: 'lib/main.ts',
@@ -11,4 +16,7 @@ export default defineConfig({
       fileName: 'main',
     },
   },
+  test: {
+    environment: 'node',
+  }
 });
