@@ -7,7 +7,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [
     react(),
-    dts({ include: ["lib"] })
+    dts({ 
+      include: ["lib"],
+      rollupTypes: true,
+      tsconfigPath: './tsconfig.lib.json',
+    })
   ],
   build: {
     lib: {
