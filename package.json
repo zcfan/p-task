@@ -1,7 +1,11 @@
 {
-  "name": "p-task",
-  "private": true,
+  "name": "@zcfan/p-task",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcfan/p-task"
+  },
+  "homepage": "https://github.com/zcfan/p-task",
   "type": "module",
   "scripts": {
     "dev": "vite",
