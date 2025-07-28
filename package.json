@@ -6,6 +6,9 @@
     "url": "https://github.com/zcfan/p-task"
   },
   "homepage": "https://github.com/zcfan/p-task",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
