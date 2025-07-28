@@ -9,6 +9,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
